@@ -7,12 +7,12 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
 const articles = [{
   title: 'Test Article 1',
-  createdAt: Date.now(),
+  createdAt: new Date(),
   description: 'Test Description'
 },
 {
   title: 'Test Article 2',
-  createdAt: Date.now(),
+  createdAt: new Date(),
   description: 'Test Description'
 }]
   res.render('index', {articles:articles});
